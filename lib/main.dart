@@ -35,13 +35,12 @@ class _MyHomePageState extends State<MyHomePage> {
   String _currentFortune = "";
 
   final _fortuneList = [
-    "大吉",
-    "吉",
-    "中吉",
-    "小吉",
-    "末吉",
-    "凶",
-    "大凶",
+    "大吉\n就活は必ず大成功するでしょう",
+    "吉\n就活は大成功するでしょう",
+    "中吉\n就活は成功するでしょう",
+    "小吉\n努力すれば就活は成功するでしょう",
+    "凶\n苦難を乗り越え、就活は成功するでしょう",
+    "大凶\n大きな困難を伴いますが、就活は成功するでしょう",
   ];
 
   void _randomFortune() {
@@ -74,13 +73,13 @@ class _MyHomePageState extends State<MyHomePage> {
               child: Padding(
                 padding: const EdgeInsets.all(8.0),
                 child: Text(
-                  '${_currentFortune}',
+                  _currentFortune,
                   style: Theme.of(context).textTheme.titleMedium,
                 ),
               ),
             ),
             ElevatedButton(
-                onPressed: _randomFortune, child: Text('Get Fortune!!!'))
+                onPressed: _randomFortune, child: const Text('Get Fortune!!'))
           ],
         ),
       ),
