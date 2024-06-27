@@ -63,7 +63,12 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            // Text("Other things/."),
+            Image.asset(
+              'assets/images/cookie.jpeg',
+              width: 200,
+              height: 200,
+              fit: BoxFit.cover,
+            ),
             Card(
               child: Padding(
                 padding: const EdgeInsets.all(8.0),
@@ -74,7 +79,7 @@ class _MyHomePageState extends State<MyHomePage> {
               ),
             ),
             ElevatedButton(
-                onPressed: _randomFortune, child: Text('Get Fortune'))
+                onPressed: _randomFortune, child: Text('Get Fortune!!!'))
           ],
         ),
       ),
