@@ -50,13 +50,14 @@ class _MyHomePageState extends State<MyHomePage> {
     setState(() {
       //これによりアプリのディスプレイに表示される
       _currentFortune = _fortuneList[fortune];
+      //DEBUG CONSOLEに表示される
+      print("State Change==>: $_currentFortune");
     });
-
-    print(_currentFortune);
   }
 
   @override
   Widget build(BuildContext context) {
+    print("Building the widget");
     return Scaffold(
       appBar: AppBar(),
       body: Center(
