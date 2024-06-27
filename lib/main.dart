@@ -35,13 +35,13 @@ class _MyHomePageState extends State<MyHomePage> {
   String _currentFortune = "";
 
   final _fortuneList = [
-    "大吉：すごくいい",
-    "吉：いい",
-    "中吉：まあいい",
-    "小吉：ほんの少しいい",
-    "末吉：普通",
-    "凶：クソ",
-    "大凶：とてもクソ",
+    "大吉",
+    "吉",
+    "中吉",
+    "小吉",
+    "末吉",
+    "凶",
+    "大凶",
   ];
 
   void _randomFortune() {
